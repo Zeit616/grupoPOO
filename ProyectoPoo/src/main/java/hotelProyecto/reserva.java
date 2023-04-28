@@ -1,22 +1,38 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Final;
+package hotelProyecto;
 
-/**
- *
- * @author Lenovo
- */
+import java.util.List;
+
+/*
+ * @Autores
+ * Ivan Alejandro Noriega Llerena
+ * Bruno
+ * Daniel
+*/
 public class reserva {
     
      //atributos
     private int numeroReserva;
     private int fechaLlegada;
     private int fechaSalida;
-    private String habitacionReservadas;
+    private List<habitacion>habitacionReservadas;
     private String cliente;
+
+    public reserva(int numeroReserva, int fechaLlegada, int fechaSalida, List<habitacion> habitacionReservadas, String cliente) {
+        this.numeroReserva = numeroReserva;
+        this.fechaLlegada = fechaLlegada;
+        this.fechaSalida = fechaSalida;
+        this.habitacionReservadas = habitacionReservadas;
+        this.cliente = cliente;
+    }
+
+    public List<habitacion> getHabitacionReservadas() {
+        return habitacionReservadas;
+    }
+
+    public void setHabitacionReservadas(List<habitacion> habitacionReservadas) {
+        this.habitacionReservadas = habitacionReservadas;
+    }
+
     
     
     
@@ -76,4 +92,12 @@ public class reserva {
     public void setCliente(String cliente) {
         this.cliente = cliente;
     }   
+    
+      public void agregarHabitacion(habitacion habitacion) {
+        
+    }
+
+    public void eliminarHabitacion(habitacion habitacion) {
+        
+    }
 }

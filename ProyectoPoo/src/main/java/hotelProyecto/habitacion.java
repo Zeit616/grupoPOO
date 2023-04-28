@@ -1,14 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Final;
+package hotelProyecto;
 
-/**
- *
- * @author Lenovo
- */
+//Importaciones
+import java.util.List;
+
+/*
+ * @Autores
+ * Ivan Alejandro Noriega Llerena
+ * Bruno
+ * Daniel
+*/
 public class habitacion {
 
      //atributos
@@ -17,9 +17,25 @@ public class habitacion {
     private int capacidadMaxima;
     public int precio;
     private String estado;
-    
-    
-    
+    private hotel hotel;
+
+    public habitacion(int numeroDehabitacion, String tipoHabitacion, int capacidadMaxima, int precio, String estado, hotel hotel) {
+        this.numeroDehabitacion = numeroDehabitacion;
+        this.tipoHabitacion = tipoHabitacion;
+        this.capacidadMaxima = capacidadMaxima;
+        this.precio = precio;
+        this.estado = estado;
+        this.hotel = hotel;
+    }
+
+    public hotel getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(hotel hotel) {
+        this.hotel = hotel;
+    }
+        
     habitacion(int _precio, String _estado){
         precio = _precio;
         estado = _estado;

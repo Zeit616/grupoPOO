@@ -1,22 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Final;
+package hotelProyecto;
 
-/**
- *
- * @author Lenovo
- */
+import java.util.List;
+
+/*
+ * @Autores
+ * Ivan Alejandro Noriega Llerena
+ * Bruno
+ * Daniel
+*/
 public class hotel {
     
      //atributos
     public String nombre;
     public String direccion;
     public int telefono;
-    private int cantidadEmpleados;
-    private int cantidadHabitaciones;
+    private List<empleado>cantidadEmpleados;    
+    private List<habitacion>cantidadHabitaciones;    
 
     /**
      * @return the nombre
@@ -24,6 +23,18 @@ public class hotel {
     public String getNombre() {
         return nombre;
     }
+
+    public hotel(String nombre, String direccion, int telefono, List<empleado>cantidadEmpleados, List<habitacion> cantidadHabitaciones) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.cantidadEmpleados = cantidadEmpleados;
+        this.cantidadHabitaciones = cantidadHabitaciones;
+    }
+
+    
+    
+    
 
     /**
      * @param nombre the nombre to set
@@ -60,31 +71,23 @@ public class hotel {
         this.telefono = telefono;
     }
 
-    /**
-     * @return the cantidadEmpleados
-     */
-    public int getCantidadEmpleados() {
+    public List<empleado> getCantidadEmpleados() {
         return cantidadEmpleados;
     }
 
-    /**
-     * @param cantidadEmpleados the cantidadEmpleados to set
-     */
-    public void setCantidadEmpleados(int cantidadEmpleados) {
+    public void setCantidadEmpleados(List<empleado> cantidadEmpleados) {
         this.cantidadEmpleados = cantidadEmpleados;
     }
 
-    /**
-     * @return the cantidadHabitaciones
-     */
-    public int getCantidadHabitaciones() {
+    
+
+    public List<habitacion> getCantidadHabitaciones() {
         return cantidadHabitaciones;
     }
 
-    /**
-     * @param cantidadHabitaciones the cantidadHabitaciones to set
-     */
-    public void setCantidadHabitaciones(int cantidadHabitaciones) {
+    public void setCantidadHabitaciones(List<habitacion> cantidadHabitaciones) {
         this.cantidadHabitaciones = cantidadHabitaciones;
-    }  
+    }
+
+   
 }
